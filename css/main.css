@@ -1,0 +1,98 @@
+HTML, BODY {
+    background: transparent url('../images/bg-dark.jpg') repeat-y center top;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background: transparent url('../images/bg-hr.png') no-repeat center bottom;
+    margin: 15px 0;
+}
+
+#header {
+    padding: 85px 0 40px 0;
+    background: transparent url('../images/bg-glow.jpg') no-repeat center top;
+    border-bottom: 1px solid rgba(255,255,255,.05);
+}
+#masthead {
+}
+#masthead h1,
+#masthead p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 9px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+#masthead p a {
+    color: #fff;
+    font-weight: bold;
+}
+#masthead h1 {
+    font-size: 54px;
+    line-height: 1;
+    color: #eee;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+#masthead p {
+    font-weight: 300;
+}
+
+#billboard p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+#billboard p.lead {
+    font-size: 22px;
+}
+
+#projects {
+    padding-top: 40px;
+    -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, .15);
+    -moz-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, .15);
+    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, .15);
+}
+#projects h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0px -1px 1px #111;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+#projects .project {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,.25);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.05);
+}
+#projects .project h3 {
+    padding: 5px;
+    line-height: 1;
+    background-color: rgba(255,255,255,.15);
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+#projects .project h3 a,
+#projects .project h3 a:link {
+    color: #bbb;
+    text-decoration: none;
+}
+#projects .project h3 a:hover {
+    color: #fff;
+}
+#projects .project .tags ul {
+    list-style: none;
+}
+#projects .project .tags ul li {
+    display: block;
+    float: left;
+    padding: 10px;
+}
