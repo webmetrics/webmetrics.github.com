@@ -2,6 +2,14 @@ HTML, BODY {
     background: transparent url('../images/bg-dark.jpg') repeat-y center top;
 }
 
+a, a:link,
+a:hover {
+   -webkit-transition: color 0.25s ease-in;
+   -moz-transition: color 0.25s ease-in;
+   -o-transition: color 0.25s ease-in;
+   transition: color 0.25s ease-in;
+}
+
 hr {
     height: 2px;
     border: none;
@@ -68,7 +76,8 @@ p {
     margin-bottom: 15px;
 }
 #projects p,
-#contributions p {
+#contributions p,
+#developers p {
     font-size: 16px;
     line-height: 1.3em;
 }
@@ -94,7 +103,7 @@ p {
 }
 #projects .project h3 a,
 #projects .project h3 a:link {
-    color: #bbb;
+    color: #aaa;
     text-decoration: none;
 }
 #projects .project h3 a:hover {
@@ -109,19 +118,38 @@ p {
     float: left;
     padding: 0 7px;
     margin-right: 5px;
-    color: #1a2940;
+    color: #222;
     text-shadow: 0 1px 1px rgba(255,255,255,.2);
-    background-color: rgba(160,195,225,.5);
+    background-color: rgba(195,195,195,.5);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     border: 1px solid rgba(255,255,255,.15);
 }
+#projects .project ul.tags li.link {
+    color: #1a2940;
+    background-color: rgba(160,195,225,.5);
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    -o-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
+#projects .project ul.tags li.link:hover {
+    background-color: rgba(160,195,225,.75);
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    -o-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
 #projects .project ul.tags li a,
 #projects .project ul.tags li a:link {
     color: #1a2940;
+    text-decoration: none;
 }
 
+#contributions {
+    margin: 20px 0 30px 0;
+}
 #contributions ul {
     margin: 0;
     list-style: none;
@@ -139,8 +167,33 @@ p {
     border-top: 1px solid rgba(255,255,255,.05);
     border-bottom: 1px solid rgba(0,0,0,.1);
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
+   -webkit-transition: background-color 0.25s ease-in;
+   -moz-transition: background-color 0.25s ease-in;
+   -o-transition: background-color 0.25s ease-in;
+   transition: background-color 0.25s ease-in;
+}
+#contributions ul li:hover {
+    background-color: rgba(255,255,255,.1);
+   -webkit-transition: background-color 0.25s ease-in;
+   -moz-transition: background-color 0.25s ease-in;
+   -o-transition: background-color 0.25s ease-in;
+   transition: background-color 0.25s ease-in;
+
 }
 #contributions ul li a,
 #contributions ul li a:link {
     color: #fff;
+}
+
+#developers {
+    margin: 0 0 50px 0;
+}
+
+#footer {
+    padding-bottom: 100px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, .15);
+    -moz-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, .15);
+    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, .15);
+    border-top: 1px solid rgba(255,255,255,.1)
 }
